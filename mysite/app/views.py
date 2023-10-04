@@ -8,7 +8,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'home.html')
+    return HttpResponse('home.html')
 
 def logout_view(request):
     logout(request)
